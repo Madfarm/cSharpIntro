@@ -36,7 +36,12 @@ namespace <whatever>
 }
 
 
-## String methods
+## Strings
+
+strings in C# are immutable, all methods that appear to modify a string actually return a new string instance, including concatenation
+
+
+## Methods
 ### Clone() - clones a given string ex:
  
 string myStr = "Wow this is a dope language";
@@ -80,7 +85,7 @@ foreach (string item in split)
 }
 
 
-
+strings arrays also work
 
 
 
