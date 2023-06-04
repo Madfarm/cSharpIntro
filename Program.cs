@@ -4,13 +4,17 @@
     {
         static void Main(string[] args)
         {
-            string myStr = "Wow this is a dope language";
+            char[] delimiterChars = {' ', ',', '.', ':', '\t'};
+            string myStr = "one\ttwo three:four,five six seven";
             // string cloned = (string)myStr.Clone();
+            System.Console.WriteLine($"Original string: {myStr} \n");
 
-            string[] split = myStr.Split(' ');
+            string[] split = myStr.Split(delimiterChars);
 
-
-            System.Console.WriteLine(split);
+            foreach (string item in split)
+            {
+                System.Console.WriteLine(item);
+            }
         }
     }
 }

@@ -61,9 +61,25 @@ don't forget it's capital!!
 
 ### Split() - splits the string into a char array based on a given char
 
+> Splits by every space
 string word = "wahtever stuff here"
-
 string[] splitWord = word.Split(' ');
+
+
+> Splits by a given array of chars
+char[] delimiterChars = {' ', ',', '.', ':', '\t'};
+string myStr = "one\ttwo three:four,five six seven";
+
+System.Console.WriteLine($"Original string: {myStr} \n");
+
+string[] split = myStr.Split(delimiterChars);
+
+foreach (string item in split)
+{
+    System.Console.WriteLine(item);
+}
+
+
 
 
 
