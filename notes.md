@@ -37,12 +37,37 @@ namespace <whatever>
 
 
 ## String methods
-Clone() - clones a given string ex:
+### Clone() - clones a given string ex:
  
 string myStr = "Wow this is a dope language";
 string cloned = (string)myStr.Clone();
 
-
 Type object must be cast to string first
+
+
+
+### CompareTo() - checks if two strings are the same, returns 0 for true and 1 for false
+
+example:
+ if(cloned.CompareTo("Balls in my mouth") == 0)
+
+
+### Length property
+string.Length
+
+don't forget it's capital!!
+
+
+
+### Split() - splits the string into a char array based on a given char
+
+string word = "wahtever stuff here"
+
+string[] splitWord = word.Split(' ');
+
+
+
+
+
 
 
